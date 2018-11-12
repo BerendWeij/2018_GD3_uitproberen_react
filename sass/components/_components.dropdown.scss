@@ -1,0 +1,32 @@
+$borderRadius: 3px;
+
+.dropdown {
+  border: 1px solid #8bb63d;
+  width: 150px;
+  border-radius: $borderRadius;
+  position: relative;
+
+  &:hover {
+    background: #d4e7f6;
+  }
+
+  &__header {
+    padding: 5px;
+  }
+
+  &__options {
+    position: absolute;
+    top: 32px;
+    width: 150px;
+    z-index: 10000;
+  }
+
+  &__option {
+    padding: 5px;
+    background: #8bb63d;
+
+    &:hover {
+      background: #9bc944;
+    }
+  }
+}
